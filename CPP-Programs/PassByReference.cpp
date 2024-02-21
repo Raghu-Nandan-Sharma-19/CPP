@@ -11,4 +11,5 @@ int main() {
     int num=10;
     doSomething(num);
     cout<<num<<endl;
+    return 0;
 }

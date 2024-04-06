@@ -26,9 +26,11 @@ int main() {
         cin>>x;
         arr.push_back(x);
     }
-    cout<<"The array is : "<<endl;
+    cout<<"The array in ascending order is : "<<endl;
+    sort(arr.begin(), arr.end());
     display(arr, size);
     int newSize = removeDuplicates(arr, size);
+    sort(arr.begin(), arr.begin()+newSize);
     cout<<"The array after removing duplicates is : "<<endl;
     display(arr, newSize);
     return 0;

@@ -12,7 +12,7 @@ int secondSmallest(vector<int> &arr, int n) {
         if(arr[i]<smallest) {
             sSmallest = smallest;
             smallest = arr[i];
-        } else if(arr[i]>smallest && arr[i]<sSmallest) {
+        } else if(arr[i]!=smallest && arr[i]<sSmallest) {
             sSmallest = arr[i];
         }
     }   

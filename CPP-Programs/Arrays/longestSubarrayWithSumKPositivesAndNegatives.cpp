@@ -34,6 +34,6 @@ int main() {
     int k;
     cout<<"Enter k : "<<endl;
     cin>>k;
-    cout<<"The longest subarray with sum k(positives and negatives) is : "<<getLongestSubarray(arr, k)<<endl;
+    cout<<"The length of the longest subarray with sum k(positives and negatives) is : "<<getLongestSubarray(arr, k)<<endl;
     return 0;
 }

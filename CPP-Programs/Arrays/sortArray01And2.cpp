@@ -52,18 +52,18 @@ void display(vector<int> arr) {
 // }
 // Optimal solution below
 void sort(vector<int> &arr) {
-    int n = arr.size();
-    int low = 0, mid = 0, high = n-1;
-    while(mid<=high) {
-        if(arr[mid] == 0) {
-            swap(arr[low], arr[mid]);
-            low++;
-            mid++;
-        } else if(arr[mid] == 1) {
-            mid++;
-        } else {
-            swap(arr[mid], arr[high]);
-            high--;
+    int n = arr.size();  // Size of the array
+    int low = 0, mid = 0, high = n-1; // Three pointers low, mid and high
+    while(mid<=high) { // Traverse the array
+        if(arr[mid] == 0) { // If the element is 0
+            swap(arr[low], arr[mid]); // Swap the element with the element at low
+            low++; // Increment low
+            mid++; // Increment mid
+        } else if(arr[mid] == 1) { // If the element is 1
+            mid++; // Increment mid
+        } else { // If the element is 2
+            swap(arr[mid], arr[high]); // Swap the element with the element at high
+            high--; // Decrement high
         }
     }
 }

@@ -1,13 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 int bestTimeToBuyAndSellStock(vector<int> &prices) {
-    int mini = prices[0], maxProfit = 0;
-    for(int i=1; i<prices.size(); i++) {
-        int cost = prices[i]-mini;
-        maxProfit = max(maxProfit, cost);
-        mini = min(mini, prices[i]);
+    int mini = prices[0], maxProfit = 0;   // Initialize the minimum price and maximum profit
+    for(int i=1; i<prices.size(); i++) { // Traverse the array
+        int cost = prices[i]-mini; // Calculate the cost
+        maxProfit = max(maxProfit, cost); // Update the maximum profit
+        mini = min(mini, prices[i]); // Update the minimum price
     }
-    return maxProfit;
+    return maxProfit; // Return the maximum profit
 }
 int main() {
     int days;

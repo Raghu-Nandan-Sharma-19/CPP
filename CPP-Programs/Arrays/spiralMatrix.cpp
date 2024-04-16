@@ -18,14 +18,14 @@ vector<int> spiralMatrix(vector<vector<int>>&MATRIX) {
         }
         right--;
         if(top <= bottom) { // left
-            for (int i = right; i >= left; i--) { // right to left
+            for (int i=right; i>=left; i--) { // right to left
               ans.push_back(MATRIX[bottom][i]);
             }
             bottom--;
         }
         // bottom to top
         if(left <= right) {
-            for (int i = bottom; i >= top; i--) { // bottom to top
+            for (int i=bottom; i>=top; i--) { // bottom to top
               ans.push_back(MATRIX[i][left]);
             }
             left++;

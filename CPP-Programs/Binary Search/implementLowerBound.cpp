@@ -1,18 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 int lowerBound(vector<int> arr, int n, int x) {
-	int low = 0, high = n-1; // low and high are the indices of the array
-	int ans = n; // ans is the smallest index of element which is >= x
-	while(low <= high) { // if low is greater than high, then the element is not present in the array
-		int mid = (low+high)/2; // calculating the mid index
-		if(arr[mid] >= x) { // if the element at mid index is greater than or equal to the target element
-			ans = mid; // then update the ans to mid index
-			high = mid-1; // then the target element will be present in the left half of the array
-		} else { // if the element at mid index is less than the target element
-			low = mid+1; // then the target element will be present in the right half of the array
-		}
-	}
-	return ans; // return the smallest index of element which is >= x
+	// int low = 0, high = n-1; // low and high are the indices of the array
+	// int ans = n; // ans is the smallest index of element which is >= x
+	// while(low <= high) { // if low is greater than high, then the element is not present in the array
+	// 	int mid = (low+high)/2; // calculating the mid index
+	// 	if(arr[mid] >= x) { // if the element at mid index is greater than or equal to the target element
+	// 		ans = mid; // then update the ans to mid index
+	// 		high = mid-1; // then the target element will be present in the left half of the array
+	// 	} else { // if the element at mid index is less than the target element
+	// 		low = mid+1; // then the target element will be present in the right half of the array
+	// 	}
+	// }
+	// return ans; // return the smallest index of element which is >= x
+    // using stl
+    int lb = lower_bound(arr.begin(), arr.end(), x)-arr.begin();
+	return lb;
 }
 int main() {
     int size;

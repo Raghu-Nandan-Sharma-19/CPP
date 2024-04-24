@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
-int lowerBound(vector<int> arr, int n, int x) {
+int upperBound(vector<int> arr, int n, int x) {
     int ans = n; // ans is the smallest index of element which is >= x
 	// int low = 0, high = n-1; // low and high are the indices of the array
 	// while(low <= high) { // if low is greater than high, then the element is not present in the array
 	// 	int mid = (low+high)/2; // calculating the mid index
-	// 	if(arr[mid] >= x) { // if the element at mid index is greater than or equal to the target element
+	// 	if(arr[mid] > x) { // if the element at mid index is greater than  the target element
 	// 		ans = mid; // then update the ans to mid index
 	// 		high = mid-1; // then the target element will be present in the left half of the array
 	// 	} else { // if the element at mid index is less than the target element
@@ -14,8 +14,8 @@ int lowerBound(vector<int> arr, int n, int x) {
 	// }
 	// return ans; // return the smallest index of element which is >= x
     // using stl
-    int lb = lower_bound(arr.begin(), arr.end(), x)-arr.begin();
-	return lb;
+    int ub = upper_bound(arr.begin(), arr.end(), x)-arr.begin();
+	return ub;
 }
 int main() {
     int size;
@@ -31,6 +31,6 @@ int main() {
     int target;
     cout<<"Enter target number : "<<endl;
     cin>>target;
-    cout<<"The smallest index of element which is >= "<<target<<" is : "<<lowerBound(arr, size, target)<<endl;
+    cout<<"The smallest index of element which is > "<<target<<" is : "<<upperBound(arr, size, target)<<endl;
     return 0;
 }

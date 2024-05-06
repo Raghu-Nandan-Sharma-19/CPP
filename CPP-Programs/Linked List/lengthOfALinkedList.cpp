@@ -32,12 +32,6 @@ int lengthOfLL(Node* head) {
 int main() {
     vector<int> arr = {2, 5, 8, 7};
     Node* head = convertArr2LL(arr);
-    // Node* temp = head;
-    // cout<<"The linked list is : "<<endl;
-    // while(temp) {
-    //     cout<<temp->data<<" ";
-    //     temp->next;
-    // }
     cout<<"Length of linked list is : "<<lengthOfLL(head)<<endl;;
     return 0;
 }

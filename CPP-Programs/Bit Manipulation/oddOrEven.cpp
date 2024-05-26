@@ -2,7 +2,7 @@
 using namespace std;
 bool isOddOrEven(int n) {
     if(n & 1) {
-        return true;
+        return true;  
     }
     return false;
 }
@@ -12,6 +12,6 @@ int main() {
         cout<<n<<" is an odd number"<<endl;
     } else {
         cout<<n<<" is an even number"<<endl;
-    }
+   }
     return 0;
 }

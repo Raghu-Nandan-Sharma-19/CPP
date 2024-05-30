@@ -16,7 +16,7 @@ int myPow(int x, int n) {
     
     // If n is negative, make m positive
     if(m < 0) m = -m;
-    
+
     // Loop until m becomes 0
     while(m > 0) {
         // If m is odd, multiply the current result by x
@@ -38,7 +38,7 @@ int myPow(int x, int n) {
     return ans;
 }
 int main() {
-    int x = 2, n = 5;
-    cout << x << " raise to power " << 5 << " is : " << myPow(x, n)<<endl;
+    int x = 2, n = 4;
+    cout << x << " raise to power " << n << " is : " << myPow(x, n)<<endl;
     return 0;
 }

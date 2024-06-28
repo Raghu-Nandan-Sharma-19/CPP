@@ -8,7 +8,7 @@ void doSomething(int num) {
     cout << num << endl;
 }
 int main() {
-    int num=10;
+    int num = 10;
     doSomething(num);
     cout<<num<<endl;
     return 0;

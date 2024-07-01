@@ -29,7 +29,7 @@ vector<vector<int>> levelOrder(TreeNode* root) {
     return ans;
 }
 int main() {
-    TreeNode* root = new TreeNode(1);
+    TreeNode *root = new TreeNode(1);
     root->left = new TreeNode(2);
     root->right = new TreeNode(3);
     root->left->left = new TreeNode(4);
@@ -38,8 +38,7 @@ int main() {
     for(auto level : res) {
         for(auto ele : level) {
             cout<<ele<<" ";
-        }
-        cout<<endl;
-    }
+        } cout<<endl;
+    } cout<<endl;
     return 0;
 }

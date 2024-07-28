@@ -7,6 +7,8 @@ int main()
     cin>>number1;
     cout<<"Enter second number : "<<endl;
     cin>>number2;
-    cout<<"Product of "<<number1<<" and "<<number2<<"is : "<<number1*number2<<endl;
+
+    // performing number1*number2 to get product
+    cout<<"Product of "<<number1<<" and "<<number2<<" is : "<<number1*number2<<endl; 
     return 0;
 }

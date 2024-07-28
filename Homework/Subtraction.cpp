@@ -7,5 +7,5 @@ int main()
     cin>>a;
     cout<<"Enter b : ";
     cin>>b;
-    cout<<"After doing a - b answer is : "<<a-b<<endl;
+    cout<<"After doing a - b answer is : "<<a-b<<endl;  // performing a-b operation to subtract b from a
 }

@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    char c;
+    cout<<"Enter any alphabet : ";
+    cin>>c;
+    if(c=='A'||c=='E'||c=='I'||c=='O'||c=='U'||c=='a'||c=='e'||c=='i'||c=='o'||c=='u') {
+        cout<<"Vowel";
+    } else {
+        cout<<"consonent";
+    }
+    return 0;
+}

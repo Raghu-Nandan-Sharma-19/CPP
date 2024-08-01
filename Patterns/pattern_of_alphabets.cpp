@@ -2,7 +2,7 @@
 using namespace std;
 int main() {
     // for(char row='a'; row<='e'; row++) {
-    //     for(char col='a'; col<='e'; col++) {
+    //     for(int col=1; col<=5; col++) {
     //         cout<<row<<" ";
     //     }
     //     cout<<endl;

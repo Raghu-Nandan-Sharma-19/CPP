@@ -6,17 +6,18 @@ int main()
     cout<<"Enter any number : ";
     cin>>num;
     int rem, ans = 0, mul = 1;
+    cout<<num<<" in binary is : ";
     while (num > 0)
     {
         // remainder
-        rem = num % 2;
+        rem = num & 1;
         // quotient
-        num = num / 2;
+        num /= 2;
         // answer
         ans = rem * mul + ans;
         // multiplier
-        mul = mul * 10;
+        mul *= 10;
     }
-    cout<<num<<" in binary is : "<<ans<<endl;
+    cout<<ans<<endl;
     return 0;
 }
